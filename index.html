@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Premium Stopwatch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+<div id="datetime"></div>
+<h1>⏱ Premium Stopwatch</h1>
+<div id="display">00:00:00:000</div>
+<p>Status: <span id="status">Ready</span></p>
+<div class="buttons">
+<button onclick="startTimer()">Start</button>
+<button onclick="pauseTimer()">Pause</button>
+<button onclick="resumeTimer()">Resume</button>
+<button onclick="lap()">Lap</button>
+<button onclick="resetTimer()">Reset</button>
+</div>
+<div class="stats">Total Laps: <span id="lapCount">0</span></div>
+<h3>Lap History</h3>
+<ul id="laps"></ul>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
