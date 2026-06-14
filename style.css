@@ -1,0 +1,35 @@
+
+body{
+margin:0;font-family:Arial;
+background:linear-gradient(-45deg,#141E30,#243B55,#6a11cb,#2575fc);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+display:flex;justify-content:center;align-items:center;
+min-height:100vh;color:white}
+@keyframes bg{
+0%{background-position:0 50%}
+50%{background-position:100% 50%}
+100%{background-position:0 50%}}
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:25px;border-radius:20px;
+width:90%;max-width:700px;text-align:center;
+box-shadow:0 0 30px rgba(0,0,0,.5)}
+#datetime{text-align:right;font-size:14px}
+#display{
+font-size:58px;color:#00ffff;
+text-shadow:0 0 10px cyan,0 0 20px cyan,0 0 30px cyan;
+margin:20px}
+button{
+padding:12px 18px;margin:5px;border:none;border-radius:10px;
+cursor:pointer;transition:.3s}
+button:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 0 20px white}
+button:nth-child(1){background:#2ecc71}
+button:nth-child(2){background:#f39c12}
+button:nth-child(3){background:#3498db}
+button:nth-child(4){background:#00bcd4}
+button:nth-child(5){background:#e74c3c}
+#laps{max-height:180px;overflow:auto;text-align:left}
+.stats{margin:10px;font-weight:bold}
+footer{margin-top:15px;opacity:.8}
